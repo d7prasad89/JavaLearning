@@ -1,0 +1,5 @@
+Hello!!
+This is a sample test file
+To test read and write using UTF-8 charset example
+This is a continuation of the above line.
+And we can end this line now.
