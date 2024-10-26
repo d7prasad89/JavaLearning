@@ -5,7 +5,7 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.Objects;
 
-public class Person implements Comparable{
+public class Person implements Comparable<Person>{
 
     private int age;
     private String name;
@@ -53,8 +53,7 @@ public class Person implements Comparable{
     }
 
     @Override
-    public int compareTo(@NotNull Object o) {
-        Person person = (Person) o;
-        return Integer.compare(this.age, person.age);
+    public int compareTo(@NotNull Person o) {
+        return Integer.compare(this.age, o.age);
     }
 }
