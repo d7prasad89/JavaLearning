@@ -4,6 +4,7 @@ public class MyException extends Exception{
     private final int detail;
 
     public MyException(int i) {
+        super("MyException: " + i);
         this.detail = i;
     }
 

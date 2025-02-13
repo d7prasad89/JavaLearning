@@ -1,5 +1,7 @@
 package completeReference.chapter10;
 
+import java.util.Arrays;
+
 public class MyExceptionDemo {
 
     public static void main(String[] args) {
@@ -7,7 +9,7 @@ public class MyExceptionDemo {
         try {
             throwException(i);
         } catch (MyException e) {
-            System.out.println("MyException Caught: "+ e);
+            System.out.println("MyException Caught: "+ Arrays.toString(e.getStackTrace()));
         }
     }
 
