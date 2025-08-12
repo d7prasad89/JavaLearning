@@ -1,4 +1,4 @@
-package completeReference.chapter12;
+package completeReference.chapter12_Enum_AutoBox_Annotations;
 
 public enum Apple {
 
@@ -9,6 +9,11 @@ public enum Apple {
     Apple(int price) {
         this.price = price;
         System.out.println("Price of " + this + " is " + price + " per pound.");
+    }
+
+    Apple() {
+        this.price = -1;
+        System.out.println("Default Constructor");
     }
 
     public int getPrice() {
