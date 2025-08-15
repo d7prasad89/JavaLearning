@@ -1,5 +1,7 @@
 package completeReference.chapter12_Enum_AutoBox_Annotations;
 
+import defensiveCoding.App;
+
 import java.util.Arrays;
 
 public class EnumTest {
@@ -7,6 +9,10 @@ public class EnumTest {
     public static void main(String[] args) {
         Apple ap;
         ap = Apple.RED_DELICIOUS;
+
+        for(Apple apple: Apple.values()) {
+            System.out.println(apple.name() + " Ordinal Values "+ apple.ordinal());
+        }
 //        System.out.println("Value of ap: " + Arrays.toString(Apple.values()));
 //        Apple honeycrisp = Apple.valueOf("HONEYCRISP");
 //        System.out.println("Value of HoneyCrisp: " + honeycrisp.getPrice());
